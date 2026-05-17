@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #031135;
+  font-family: Arial;
+}
+
+.dashboard {
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.top-section {
+  display: flex;
+  gap: 30px;
+}
+
+.form-box,
+.job-box {
+  flex: 1;
+  background: #1c2b4a;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.form-box h2,
+.job-box h2,
+.candidate-wrapper h2,
+.ai-wrapper h2 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: #3b4f74;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.button-row {
+  display: flex;
+  gap: 20px;
+}
+
+.basic-btn {
+  background: #06c755;
+  color: white;
+  border: none;
+  padding: 18px 35px;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.ai-btn {
+  background: linear-gradient(
+    to right,
+    #7c3aed,
+    #d500f9
+  );
+  color: white;
+  border: none;
+  padding: 18px 35px;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.candidate-wrapper,
+.ai-wrapper {
+  margin-top: 40px;
+  background: #1c2b4a;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.candidate-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, 1fr);
+  gap: 20px;
+}
+
+.candidate-card,
+.ai-card {
+  background: #36496b;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.candidate-card h3,
+.ai-card h3 {
+  font-size: 35px;
+}
+
+.candidate-card p,
+.ai-card p {
+  font-size: 22px;
+}
+
+.skills {
+  margin-top: 15px;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.delete-btn {
+
+  margin-top: 20px;
+
+  background: red;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  border-radius: 8px;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+
+  background: darkred;
+}

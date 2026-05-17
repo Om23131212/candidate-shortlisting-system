@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #081229;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 28px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+.top-section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.left-box,
+.right-box {
+  flex: 1;
+  background: #1b2944;
+  padding: 28px;
+  border-radius: 18px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: #344766;
+  border: none;
+  outline: none;
+  padding: 18px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #bfc8d8;
+}
+
+.button-group {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.add-btn {
+  background: #2563eb;
+}
+
+.match-btn {
+  background: #00c853;
+}
+
+.ai-btn {
+  background: linear-gradient(
+    90deg,
+    #7b2ff7,
+    #d500f9
+  );
+}
+
+.logout-btn {
+  background: red;
+}
+
+.search-box {
+  margin-top: 25px;
+}
+
+.candidate-section {
+  background: #1b2944;
+  padding: 28px;
+  border-radius: 18px;
+}
+
+.candidate-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(330px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.candidate-card {
+  background: #344766;
+  padding: 24px;
+  border-radius: 14px;
+}
+
+.candidate-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.candidate-card p {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.delete-btn {
+  background: red;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .top-section {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
