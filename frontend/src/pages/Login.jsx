@@ -29,7 +29,7 @@ const Login = () => {
 
         const res =
           await axios.post(
-            "http://localhost:5000/api/auth/login",
+            "https://candidate-shortlisting-backend-5c2p.onrender.com/api/auth/login",
             {
               email,
               password,

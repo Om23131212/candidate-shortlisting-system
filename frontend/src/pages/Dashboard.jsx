@@ -51,7 +51,7 @@ const Dashboard = () => {
 
         const res =
           await axios.get(
-            "http://localhost:5000/api/candidates"
+            "https://candidate-shortlisting-backend-5c2p.onrender.com/api/candidates"
           );
 
         setCandidates(res.data);
@@ -69,7 +69,7 @@ const Dashboard = () => {
       try {
 
         await axios.post(
-          "http://localhost:5000/api/candidates",
+          "https://candidate-shortlisting-backend-5c2p.onrender.com/api/candidates",
           {
             name,
             email,
@@ -120,7 +120,7 @@ const Dashboard = () => {
 
         const res =
           await axios.post(
-            "http://localhost:5000/api/ai/shortlist",
+            "https://candidate-shortlisting-backend-5c2p.onrender.com/api/ai/shortlist",
             {
               requiredSkills,
               minExperience,
@@ -143,7 +143,7 @@ const Dashboard = () => {
       try {
 
         await axios.delete(
-          `http://localhost:5000/api/candidates/${id}`
+          `https://candidate-shortlisting-backend-5c2p.onrender.com/api/candidates/${id}`
         );
 
         fetchCandidates();

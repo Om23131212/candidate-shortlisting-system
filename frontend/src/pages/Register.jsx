@@ -32,7 +32,7 @@ const Register = () => {
 
         const res =
           await axios.post(
-            "http://localhost:5000/api/auth/register",
+            "https://candidate-shortlisting-backend-5c2p.onrender.com/api/auth/register",
             {
               name,
               email,
